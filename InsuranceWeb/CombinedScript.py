@@ -5,16 +5,16 @@ import random
 import os
 import logging
 from locust.exception import StopUser
-
-logger = logging.getLogger(__name__)
+import sys
 
 Root_Dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# print("Root path is-",Root_Dir)
+# print("Root path is-", Root_Dir)
 Application_folder = os.path.join(Root_Dir, "InsuranceWeb")
 # print("Application Folder is-",Application_folder)
 CSV_File_location = os.path.join(Application_folder, "credentials_csv.csv")
 # print("CSV File location is-",CSV_File_location)
-
+logger = logging.getLogger(__name__)
+sys.path.append(Root_Dir)
 my_reader = CSVReader(CSV_File_location).read_data()
 
 
@@ -65,7 +65,7 @@ class MainClass(TaskSet):
                 # logger.error("Login successful for user-" + self.MyUsername)
             else:
                 response.failure("Login failed")
-                logger.critical("User failed to login-"+self.MyUsername)
+                logger.critical("User failed to login-" + self.MyUsername)
                 raise StopUser
 
         self.cor_usersessionID = response.cookies["UserSessionFilter.sessionId"]
