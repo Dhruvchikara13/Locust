@@ -1,0 +1,8 @@
+[locust script options]
+host: http://localhost:9090
+locustfile: C:\Users\dhruvchikara\PycharmProjects\LOCUST\InsuranceWeb\CombinedScript.py
+
+[workers mode]
+worker: true
+master-host: 127.0.0.1
+master-port: 5557
