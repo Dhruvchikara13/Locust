@@ -3,7 +3,7 @@ import random
 
 from locust.exception import StopUser
 
-from ParaBank.csvreader import CSVReader
+# from ParaBank.csvreader import CSVReader
 from locust import SequentialTaskSet, User, HttpUser, task, events, constant
 import json, re, os, sys
 import logging
@@ -11,8 +11,11 @@ import logging
 # building the path of the urls so as to make script platform independent
 
 Root_Dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print("Root-",Root_Dir)
 Application_folder = os.path.join(Root_Dir, "ParaBank")
+print("Application-",Application_folder)
 CreatedUserFilePath = os.path.join(Application_folder, "CreatedUser.csv")
+print("CSV-",CreatedUserFilePath)
 
 # CSV_File_location = os.path.join(Application_folder, "credentials_csv.csv")
 # print("CSV File location is-",CSV_File_location)
