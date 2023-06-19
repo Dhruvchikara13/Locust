@@ -21,6 +21,7 @@ print("CSV-",CreatedUserFilePath)
 # print("CSV File location is-",CSV_File_location)
 logger = logging.getLogger(__name__)
 sys.path.append(Root_Dir)
+from ParaBank.csvreader import CSVReader
 my_reader = CSVReader(CreatedUserFilePath).read_data()
 
 
