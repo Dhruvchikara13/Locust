@@ -1,0 +1,7 @@
+[locust script options]
+locustfile: 01_OpenAccount.py
+
+[workers mode]
+worker: true
+master-host: 65.2.69.56
+master-port: 5557

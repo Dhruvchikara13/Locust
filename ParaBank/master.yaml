@@ -1,0 +1,12 @@
+[locust script options]
+locustfile: 01_OpenAccount.py
+
+[master mode]
+master: true
+expect-workers: 2
+
+[locust headless]
+headless: true
+users:6
+spawn-rate: 1
+run-time: 20s
