@@ -1,0 +1,15 @@
+[2023-06-14 13:13:16,126] IN-PG0352WB/INFO/locust.main: Run time limit set to 20 seconds
+[2023-06-14 13:13:16,126] IN-PG0352WB/INFO/locust.main: Starting Locust 2.15.2.dev24
+[2023-06-14 13:13:16,128] IN-PG0352WB/INFO/locust.runners: Ramping to 5 users at a rate of 1.00 per second
+[2023-06-14 13:13:35,845] IN-PG0352WB/INFO/locust.main: --run-time limit reached, shutting down
+[2023-06-14 13:13:35,846] IN-PG0352WB/INFO/locust.main: Shutting down (exit code 1)
+[2023-06-14 15:42:54,037] IN-PG0352WB/INFO/locust.main: Run time limit set to 20 seconds
+[2023-06-14 15:42:54,037] IN-PG0352WB/INFO/locust.main: Starting Locust 2.15.2.dev24
+[2023-06-14 15:42:54,040] IN-PG0352WB/INFO/locust.runners: Ramping to 5 users at a rate of 1.00 per second
+[2023-06-14 15:43:09,047] IN-PG0352WB/INFO/locust.main: Shutting down (exit code 1)
+[2023-06-14 15:43:45,515] IN-PG0352WB/INFO/locust.main: Run time limit set to 20 seconds
+[2023-06-14 15:43:45,515] IN-PG0352WB/INFO/locust.main: Starting Locust 2.15.2.dev24
+[2023-06-14 15:43:45,518] IN-PG0352WB/INFO/locust.runners: Ramping to 5 users at a rate of 1.00 per second
+[2023-06-14 15:43:49,550] IN-PG0352WB/INFO/locust.runners: All users spawned: {"MyLoadTest": 5} (5 total users)
+[2023-06-14 15:44:05,145] IN-PG0352WB/INFO/locust.main: --run-time limit reached, shutting down
+[2023-06-14 15:44:05,146] IN-PG0352WB/INFO/locust.main: Shutting down (exit code 0)

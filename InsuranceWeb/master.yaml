@@ -1,0 +1,13 @@
+[locust script options]
+host: http://localhost:9090
+locustfile: CombinedScript_SeperateClasses.py
+
+[master mode]
+master: true
+expect-workers: 2
+
+[locust headless]
+headless: false
+users: 100
+spawn-rate: 5
+run-time: 300s
