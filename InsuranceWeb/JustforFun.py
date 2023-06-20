@@ -1,5 +1,13 @@
+import os,sys
+#sys.path.append(Root_Dir)
+Root_Dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+print("Root path is-", Root_Dir)
+Application_folder = os.path.join(Root_Dir, "InsuranceWeb")
+sys.path.append(Root_Dir)
+
 from InsuranceWeb.CombinedScript_SeperateClasses import MainAutoQuote, MainAgentLookup
 from locust import HttpUser, constant, constant_pacing
+
 
 
 # Once script is created for a particular flow, import that script in a new fresh file.
