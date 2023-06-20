@@ -3,7 +3,7 @@ import math
 
 from locust import SequentialTaskSet, HttpUser, task, constant, events, TaskSet, User, LoadTestShape
 import re
-from InsuranceWeb.csvreader import CSVReader
+#from InsuranceWeb.csvreader import CSVReader
 import random
 import os
 import logging
@@ -12,13 +12,16 @@ import sys
 import locust_plugins
 
 Root_Dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# print("Root path is-", Root_Dir)
+print("Root path is-", Root_Dir)
 Application_folder = os.path.join(Root_Dir, "InsuranceWeb")
-# print("Application Folder is-",Application_folder)
+print("Application Folder is-",Application_folder)
 CSV_File_location = os.path.join(Application_folder, "credentials_csv.csv")
-# print("CSV File location is-",CSV_File_location)
+print("CSV File location is-",CSV_File_location)
 logger = logging.getLogger(__name__)
 sys.path.append(Root_Dir)
+
+from InsuranceWeb.csvreader import CSVReader
+
 my_reader = CSVReader(CSV_File_location).read_data()
 
 
