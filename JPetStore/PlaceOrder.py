@@ -497,12 +497,12 @@ class LoadTest1(HttpUser):
     host = "https://petstore.octoperf.com/"
     tasks = [JPetFlow1]
     wait_time = constant(2)
-    fixed_count = 5
+    fixed_count = 50
 
 
 class LoadTest2(HttpUser):
     host = "https://petstore.octoperf.com/"
     tasks = [JPetFlow2]
     wait_time = constant(2)
-    fixed_count = 7
+    fixed_count = 70
 
